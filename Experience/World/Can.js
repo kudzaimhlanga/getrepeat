@@ -60,7 +60,7 @@ export default class Can {
     this.mainBottle = new THREE.Group();
     this.mainBottle.add(this.bottleGroup);
     this.mainBottle.scale.set(0.7, 0.7, 0.7);
-    this.mainBottle.position.set(3, -1.5, 0);
+    this.mainBottle.position.set(2, -1.5, 0);
     this.mainBottle.rotation.set(0.343, 3.736, -0.44);
 
     //create group for can
@@ -74,10 +74,12 @@ export default class Can {
     this.canGroup.add(this.canPoint);
     this.canPoint.position.set(-1.029, 2.485, -0.218);
 
+    console.log("model added")
+    
     this.mainCan = new THREE.Group();
     this.mainCan.add(this.canGroup);
     this.mainCan.scale.set(0.9, 0.9, 0.9);
-    this.mainCan.position.set(-3, 0, 0);
+    this.mainCan.position.set(-2.5, 0, 0);
     this.mainCan.rotation.set(0.865, 0.865, -0.44);
 
     //create group for both objects
